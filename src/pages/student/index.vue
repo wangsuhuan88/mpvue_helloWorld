@@ -6,6 +6,7 @@
             <card :text="name"></card>
         </div>
 
+        <button @click="testRequest()">request</button>
         <div class="g-footer">
             <VmyNavigator></VmyNavigator>
         </div>
@@ -40,6 +41,23 @@
         methods: {
             testh(e){
                 console.log(e)
+            },
+            testRequest(){
+                let url="https://gateway.qschou.com/v3.0.0/index/homepage"
+                wx.request({
+                    url: url,
+                    // data: {
+                    //     x: '',
+                    //     y: ''
+                    // },
+                    header: {
+                        'content-type': 'application/json' // 默认值
+                    },
+                    success (res) {
+                        console.log(res.data)
+                    }
+                })
+
             }
         },
     }

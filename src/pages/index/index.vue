@@ -42,10 +42,10 @@ export default {
   data () {
     return {
       motto: 'Hello miniprograme',
-      userInfo: {
-        nickName: 'wsh test',
-        avatarUrl: 'http://mpvue.com/assets/logo.png'
-      }
+    //   userInfo: {
+    //     nickName: 'wsh test',
+    //     avatarUrl: 'http://mpvue.com/assets/logo.png'
+    //   }
     }
   },
 
