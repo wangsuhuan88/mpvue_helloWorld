@@ -28,25 +28,25 @@ export default {
     console.log(`log at:${Date.now()}`)
   },
   onLaunch(){
-        wx.login({
-            success (res) {
-                if (res.code) {
-                    console.log('wsh已登录')
-                    wx.reLaunch({
-                        //url: '/pages/index/main',
-                        url: '/pages/student/main',
-                        success(){
-                            console.log('success')
-                        }
-                    })
-                } else {
-                    console.log('wsh未登录')
-                    wx.reLaunch({
-                        url: '/pages/teacher/main'
-                    })
-                }
-            }
-        })
+        // wx.login({
+        //     success (res) {
+        //         if (res.code) {
+        //             console.log('wsh已登录')
+        //             wx.reLaunch({
+        //                 //url: '/pages/index/main',
+        //                 url: '/pages/student/main',
+        //                 success(){
+        //                     console.log('success')
+        //                 }
+        //             })
+        //         } else {
+        //             console.log('wsh未登录')
+        //             wx.reLaunch({
+        //                 url: '/pages/teacher/main'
+        //             })
+        //         }
+        //     }
+        // })
   }
 }
 </script>

@@ -1,13 +1,14 @@
 {
   "pages": [
+    "pages/studentpages/my/index/main",
     "pages/student/main",
     "pages/teacher/main",
     "pages/index/main",
     "pages/logs/main",
     "pages/counter/main",
     "pages/studentpages/kecheng/main",
-    "pages/studentpages/detail/main",
-    "pages/studentpages/my/index/main"
+    "pages/studentpages/detail/main"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

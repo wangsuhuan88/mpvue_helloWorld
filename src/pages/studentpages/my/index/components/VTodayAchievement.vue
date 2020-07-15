@@ -1,8 +1,10 @@
 <template>
-    <div class="g-box4" v-if="baseData">
-        今日成就
-        <div>
-            {{baseData.todayAchievement}}
+    <div class="box g-box4" v-if="baseData">
+        <div class="m-box">
+            <div class="c-tit">今日成就</div>
+            <div>
+                {{baseData.todayAchievement}}
+            </div>
         </div>
     </div>
 </template>

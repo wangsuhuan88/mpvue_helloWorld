@@ -86,8 +86,9 @@ function delayedCall(delay) {
  */
 function save(options) {
   const wxSave = promisify(wx.canvasToTempFilePath)
-  return wxSave(options)
-    .then(res => res.tempFilePath)
+  return wxSave(options).then(res => {
+        return res.tempFilePath
+    })
 }
 
 /**

@@ -11,7 +11,7 @@
         methods: {
             handlerFun(){
                 console.log(123)
-                this.$emit('drawPic')
+                this.$emit('showModalFun')
             }
         },
         

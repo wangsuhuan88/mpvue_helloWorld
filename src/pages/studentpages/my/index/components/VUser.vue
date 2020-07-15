@@ -1,7 +1,10 @@
 <template>
     <div  class="g-box1" v-if="baseData">
-        <p>{{baseData.nick}}</p>
         <img class="m-avatar" :src="baseData.headUrl" alt="">
+        <div class="m-info">
+            <div class="u-name">{{baseData.nick}}</div>
+            <div class="u-msg">我在学云舒写大语文启蒙课</div>
+        </div>
     </div>
 </template>
 
@@ -38,9 +41,31 @@
 
 <style lang="scss" scoped>
 .g-box1{
+    padding: 24px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
     .m-avatar{
-        width: 100px;
-        height: 100px;
+        width: 54px;
+        max-width: 54px;
+        height: 54px;
+        margin-right: 8px;
+        border-radius: 50%;
+    }
+    .m-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        .u-name{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .u-msg{
+            font-size: 15px;
+        }
+
     }
 }
 
